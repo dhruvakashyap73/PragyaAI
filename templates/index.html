@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REJAG Technologies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: #ffffff; /* White Background */
+            color: #333;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Align content to the top */
+            min-height: 100vh; /* Ensure full viewport height */
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: #bfb7b7; /* Maroon Header */
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .header img {
+            max-width: 200px; /* Adjust as needed */
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .welcome-message {
+            padding: 100px;
+            text-align: left;
+            margin-bottom: 20px;
+            line-height: 30px;
+            font-size: 20px;
+        }
+        /* Chat Icon Styles */
+        .chat-icon {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background: #800000; /* Maroon Chat Icon */
+            box-shadow: 0 8px 16px rgba(128, 0, 0, 0.3);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .chat-icon:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 20px rgba(128, 0, 0, 0.4);
+        }
+
+        .chat-icon img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+        }
+
+        /* Chatbot Styles */
+        .chatbot {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 400px;
+            height: 600px;
+            background: #ffffff; /* White Chatbot Background */
+            border-radius: 24px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+            z-index: 999;
+        }
+
+        .chatbot-header {
+            background: #800000; /* Maroon Chatbot Header */
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .header-title img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .header-title-text h1 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .header-title-text p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .close-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: #fff;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .close-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .chatbot-messages {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .message {
+            max-width: 85%;
+            padding: 12px 16px;
+            border-radius: 16px;
+            font-size: 14px;
+            line-height: 1.5;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .user-message {
+            background: #800000; /* Maroon User Message */
+            color: #fff;
+            align-self: flex-end;
+            border-bottom-right-radius: 4px;
+        }
+
+        .bot-message {
+            background: #f0f0f0; /* Light Gray Bot Message */
+            color: #333;
+            align-self: flex-start;
+            border-bottom-left-radius: 4px;
+        }
+
+        .chatbot-input {
+            padding: 20px;
+            background: #ffffff; /* White Input Background */
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .input-form {
+            display: flex;
+            gap: 12px;
+        }
+
+        .input-field {
+            flex-grow: 1;
+            background: #f0f0f0; /* Light Gray Input Field */
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 12px 16px;
+            color: #333;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: #800000; /* Maroon Input Field Focus */
+        }
+
+        .send-btn {
+            background: #800000; /* Maroon Send Button */
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .send-btn:hover {
+            background: #600000;
+        }
+
+        .suggestions {
+            padding: 0 20px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .suggestion-btn {
+            background: #f0f0f0; /* Light Gray Suggestion Button */
+            border: 1px solid #e0e0e0;
+            border-radius: 20px;
+            padding: 8px 16px;
+            color: #333;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .suggestion-btn:hover {
+            background: #e0e0e0;
+            transform: translateY(-1px);
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .typing-indicator {
+            display: flex;
+            gap: 4px;
+            padding: 12px 16px;
+            background: #f0f0f0; /* Light Gray Typing Indicator */
+            border-radius: 16px;
+            align-self: flex-start;
+            border-bottom-left-radius: 4px;
+        }
+
+        .typing-dot {
+            width: 8px;
+            height: 8px;
+            background: #800000; /* Maroon Typing Dot */
+            border-radius: 50%;
+            animation: typing 1.4s infinite;
+        }
+
+        .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+        @keyframes typing {
+            0%, 60%, 100% { transform: translateY(0); }
+            30% { transform: translateY(-4px); }
+        }
+
+        @media (max-width: 480px) {
+            .chatbot {
+                width: 100%;
+                height: 100%;
+                bottom: 0;
+                right: 0;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <img src="https://rejag.com/wp-content/uploads/2018/09/rejag-1.png" alt="REJAG Technologies Logo">
+        <h2>TECHNOLOGIES</h2>
+        <br/>
+        <h4>BENGALURU</h4>
+    </header>
+
+    <!-- Welcome Message Section -->
+    <section class="welcome-message">
+        <h2>Welcome to REJAG Technologies</h2>
+        <br>
+        <h3>About Us</h3>
+        <hr>
+        <br>
+        <p>REJAG Technologies Pvt Ltd, is an IT consultancy and research firm specializing in hardware, software, 
+            communication, automation, and artificial intelligence. 
+            The company is dedicated to assisting small businesses in enhancing their visibility by digitally connecting their operations. 
+        </p>
+        <br>
+        <h3>Key Offerings:</h3>
+        <hr>
+        <br>
+        <ul>
+            <li>Business Automation Solutions: Providing tools and strategies to streamline business processes.</li>
+            <li>Point of Sale (POS) Consulting: Offering expert advice on POS systems to optimize sales and inventory management.</li>
+            <li>IT Services: Delivering comprehensive IT solutions tailored to business needs.</li>
+            <li>Website Development & SEO: Creating and optimizing websites to improve online presence and search engine rankings.</li>
+        </ul>
+        <br>
+        <h3>Our Partners:</h3>
+        <hr>
+        <br>
+        <ul>
+            <li>GoFrugal Technologies - ERP & POS software provider (REJAG is a Rockstar Partner).</li>
+            <li>Zoho - Suite of online productivity tools.</li>
+            <li>Microsoft - Cloud and enterprise solutions.</li>
+            <li>Google - Internet services and cloud computing.</li>
+            <li>Tally Solutions - ERP software for businesses.</li>
+        </ul>
+        <br>
+    </section>
+
+    <!-- Chatbot Icon -->
+    <div class="chat-icon" id="chatIcon">
+        <img src="https://www.shutterstock.com/image-vector/chatbot-icon-line-vector-isolate-600nw-1841577400.jpg" alt="AI Assistant">
+    </div>
+
+    <!-- Chatbot Window -->
+    <div class="chatbot" id="chatbot">
+        <div class="chatbot-header">
+            <div class="header-title">
+                <img src="https://www.shutterstock.com/image-vector/chatbot-icon-line-vector-isolate-600nw-1841577400.jpg" alt="AI Assistant">
+                <div class="header-title-text">
+                    <h1>REJAG Tech Assistant</h1>
+                    <p>Ask me anything about REJAG Technologies</p>
+                </div>
+            </div>
+            <button class="close-btn" id="closeChat">✕</button>
+        </div>
+
+        <div class="chatbot-messages" id="chatbotMessages"></div>
+
+        <div class="suggestions" id="suggestions"></div>
+
+        <div class="chatbot-input">
+            <form class="input-form" id="messageForm">
+                <input type="text" class="input-field" id="userInput" placeholder="Type your message..." required>
+                <button type="submit" class="send-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const chatIcon = document.getElementById('chatIcon');
+        const chatbot = document.getElementById('chatbot');
+        const closeChat = document.getElementById('closeChat');
+        const messageForm = document.getElementById('messageForm');
+        const userInput = document.getElementById('userInput');
+        const chatbotMessages = document.getElementById('chatbotMessages');
+        const suggestionsDiv = document.getElementById('suggestions');
+
+        let currentTypingTimeout;
+
+        chatIcon.addEventListener('click', () => {
+            chatbot.style.display = 'flex';
+            chatIcon.style.display = 'none';
+            addBotMessage("Hello! I'm Pragya,The REJAG Tech Assistant. How can I help you today?",
+            );
+        });
+
+        closeChat.addEventListener('click', () => {
+            chatbot.style.display = 'none';
+            chatIcon.style.display = 'flex';
+        });
+
+        function addMessage(content, isUser = false) {
+            const message = document.createElement('div');
+            message.classList.add('message', isUser ? 'user-message' : 'bot-message');
+            chatbotMessages.appendChild(message);
+
+            if (isUser) {
+                message.textContent = content;
+                message.style.animation = 'fadeInUp 0.3s ease forwards';
+            } else {
+                typeMessage(message, content);
+            }
+
+            chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+        }
+
+        function showTypingIndicator() {
+            const indicator = document.createElement('div');
+            indicator.classList.add('typing-indicator');
+            for (let i = 0; i < 3; i++) {
+                const dot = document.createElement('div');
+                dot.classList.add('typing-dot');
+                indicator.appendChild(dot);
+            }
+            chatbotMessages.appendChild(indicator);
+            chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+            return indicator;
+        }
+
+        function typeMessage(element, text) {
+            let index = 0;
+            element.style.animation = 'fadeInUp 0.3s ease forwards';
+
+            function type() {
+                if (index < text.length) {
+                    element.textContent += text.charAt(index);
+                    index++;
+                    chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+                    setTimeout(type, 30 + Math.random() * 30);
+                }
+            }
+
+            type();
+        }
+
+        function addBotMessage(content, suggestions = []) {
+            const indicator = showTypingIndicator();
+
+            setTimeout(() => {
+                chatbotMessages.removeChild(indicator);
+                addMessage(content, false);
+
+                if (suggestions.length > 0) {
+                    suggestionsDiv.innerHTML = '';
+                    suggestions.forEach(suggestion => {
+                        const button = document.createElement('button');
+                        button.classList.add('suggestion-btn');
+                        button.textContent = suggestion;
+                        button.addEventListener('click', () => {
+                            addMessage(suggestion, true);
+                            handleUserMessage(suggestion);
+                        });
+                        suggestionsDiv.appendChild(button);
+                    });
+                }
+            }, 1000 + Math.random() * 1000);
+        }
+
+        async function handleUserMessage(message) {
+            try {
+                const response = await fetch('/ask', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ query: message })
+                });
+
+                const data = await response.json();
+                addBotMessage(data.answer, data.suggestions);
+            } catch (error) {
+                console.error('Error:', error);
+                addBotMessage("I apologize, but I'm having trouble connecting to the server. Please try again later.");
+            }
+        }
+
+        messageForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const message = userInput.value.trim();
+            if (message) {
+                addMessage(message, true);
+                handleUserMessage(message);
+                userInput.value = '';
+            }
+        });
+    </script>
+</body>
+</html>
