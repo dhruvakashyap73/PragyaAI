@@ -3,13 +3,13 @@ A Smart Customer Support Chatbot for **REJAG Technologies** powered by **Flask**
 
 ---
 
-## 🧠 Overview
+### 🧠 Overview
 
 **Pragya** is an intelligent, real-time customer support chatbot designed to deliver **quick, concise, and context-aware responses** to user queries about REJAG Technologies. Built with a hybrid architecture, it combines **static FAQ handling** and **LLM-driven dynamic replies** to offer accurate and human-like interactions 24/7.
 
 ---
 
-## 🚀 Features
+### 🚀 Features
 
 - **Natural Language Understanding** using Google’s **Gemini API**
 - Dynamic, chat-based UI with seamless UX
@@ -21,7 +21,7 @@ A Smart Customer Support Chatbot for **REJAG Technologies** powered by **Flask**
 
 ---
 
-## 🛠️ Tech Stack
+### 🛠️ Tech Stack
 
 | Component     | Technology Used               |
 |---------------|-------------------------------|
@@ -34,7 +34,7 @@ A Smart Customer Support Chatbot for **REJAG Technologies** powered by **Flask**
 
 ---
 
-## 🧱 System Architecture
+### 🧱 System Architecture
 
 The following diagram illustrates the end-to-end architecture of the **Pragya Chatbot System** and how components interact:
 
@@ -96,7 +96,7 @@ The following diagram illustrates the end-to-end architecture of the **Pragya Ch
 
 ---
 
-👨‍💻 Developed By<br>
+#### 👨‍💻 Developed By<br>
 Dhruva Kashyap<br>
 BE Graduate from BNMIT | Artificial Intelligence & Machine Learning<br>
 At REJAG Technologies Pvt. Ltd., Bengaluru.<br>
@@ -104,7 +104,7 @@ At REJAG Technologies Pvt. Ltd., Bengaluru.<br>
 ___
 
 
-## 📘 Additional Resources
+### 📘 Additional Resources
 
 For a complete explanation of the methodology, results, diagrams, and analysis,  
 📄 **[Click here to view the full project report](https://github.com/dhruvakashyap73/TrueeTone/blob/main/Project_Report.pdf)**
