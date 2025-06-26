@@ -27,7 +27,7 @@ A Smart Customer Support Chatbot for **REJAG Technologies** powered by **Flask**
 |---------------|-------------------------------|
 | Frontend      | HTML, CSS, JavaScript         |
 | Backend       | Python, Flask                 |
-| LLM Engine    | Google Gemini API(via `genai`)   |
+| LLM Engine    | Google Gemini API (via `genai`)   |
 | Deployment    | Localhost / Cloud-compatible  |
 | Logging       | Python logging module         |
 | API Security  | Environment Variables (.env)  |
@@ -39,6 +39,7 @@ A Smart Customer Support Chatbot for **REJAG Technologies** powered by **Flask**
 The following diagram illustrates the end-to-end architecture of the **Pragya Chatbot System** and how components interact:
 
 ![System Architecture Diagram](https://github.com/dhruvakashyap73/Pragya-Chatbot/blob/main/SystemArchitecture.jpg)
+
 
 ---
 
@@ -92,5 +93,14 @@ The following diagram illustrates the end-to-end architecture of the **Pragya Ch
 ✅ User authentication and personalization<br>
 📊 Analytics dashboard for user behavior<br>
 📱 Mobile PWA version<br>
+
+---
+
+👨‍💻 Developed By
+Dhruva Kashyap
+BE Graduate from BNMIT | Artificial Intelligence & Machine Learning
+At REJAG Technologies Pvt. Ltd., Bengaluru.
+
+___
 
 
