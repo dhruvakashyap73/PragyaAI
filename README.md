@@ -104,12 +104,3 @@ At REJAG Technologies Pvt. Ltd., Bengaluru.<br>
 ___
 
 
-### 📘 Additional Resources
-
-For a complete explanation of the methodology, results, diagrams, and analysis,  
-📄 **[Click here to view the full project report](https://github.com/dhruvakashyap73/TrueeTone/blob/main/Project_Report.pdf)**
-
-
----
-
-
