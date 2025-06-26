@@ -99,7 +99,7 @@ The following diagram illustrates the end-to-end architecture of the **Pragya Ch
 
 ### 🎯 Future Enhancements
 
-✅ Chat history database integration (MongoDB/PostgreSQL)"\n"
+✅ Chat history database integration (MongoDB/PostgreSQL)<br>
 ✅ User authentication and personalization
 - 🌐 Multilingual support
 - 📊 Analytics dashboard for user behavior
