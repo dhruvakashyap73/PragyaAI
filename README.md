@@ -11,13 +11,13 @@ A Smart Customer Support Chatbot for **REJAG Technologies** powered by **Flask**
 
 ## 🚀 Features
 
-✅ **Natural Language Understanding** using Google’s **Gemini API**
-✅ Dynamic, chat-based UI with seamless UX
-✅ Suggestive follow-up questions to guide user flow
-✅ FAQ keyword filtering for efficiency
-✅ Error handling and logging with complete traceability
-✅ Responsive, mobile-friendly chatbot widget
-✅ Modular Flask backend with easy-to-expand routes
+- **Natural Language Understanding** using Google’s **Gemini API**
+- Dynamic, chat-based UI with seamless UX
+- Suggestive follow-up questions to guide user flow
+- FAQ keyword filtering for efficiency
+- Error handling and logging with complete traceability
+- Responsive, mobile-friendly chatbot widget
+- Modular Flask backend with easy-to-expand routes
 
 ---
 
