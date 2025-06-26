@@ -46,4 +46,3 @@ graph TD
     F --> G[LLM Response]
     G --> H[Send Response to Frontend]
     H --> I[Render Reply + Suggestions]
-```
