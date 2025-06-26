@@ -36,13 +36,6 @@ A Smart Customer Support Chatbot for **REJAG Technologies** powered by **Flask**
 
 ## 🧱 System Architecture
 
-```mermaid
-graph TD
-    A[User Input via Chat UI] --> B[AJAX POST /ask]
-    B --> C[Flask Backend]
-    C --> D[ConversationManager]
-    D -->|If FAQ Match| E[Return Predefined Answer]
-    D -->|Else| F[Generate Prompt + Call Gemini API]
-    F --> G[LLM Response]
-    G --> H[Send Response to Frontend]
-    H --> I[Render Reply + Suggestions]
+The following diagram illustrates the end-to-end architecture of the **Pragya Chatbot System** and how components interact:
+
+![System Architecture Diagram](https://raw.githubusercontent.com/your-username/pragya-chatbot/main/assets/pragya-system-architecture.png)
