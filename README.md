@@ -27,7 +27,7 @@ A Smart Customer Support Chatbot for **REJAG Technologies** powered by **Flask**
 |---------------|-------------------------------|
 | Frontend      | HTML, CSS, JavaScript         |
 | Backend       | Python, Flask                 |
-| LLM Engine    | Google Gemini (via `genai`)   |
+| LLM Engine    | Google Gemini API(via `genai`)   |
 | Deployment    | Localhost / Cloud-compatible  |
 | Logging       | Python logging module         |
 | API Security  | Environment Variables (.env)  |
@@ -66,18 +66,6 @@ The following diagram illustrates the end-to-end architecture of the **Pragya Ch
 
 ---
 
-### 📁 Project Structure
-
-├── app.py                   # Flask backend logic
-├── templates/
-│   └── index.html           # Frontend chatbot UI
-├── static/                  # Static assets (optional)
-├── .env                     # API Keys (not uploaded)
-├── requirements.txt         # Python dependencies
-└── README.md
-
----
-
 ### 🧠 How It Works
 
 1. The user interacts with a web-based chatbot interface.
@@ -100,9 +88,9 @@ The following diagram illustrates the end-to-end architecture of the **Pragya Ch
 ### 🎯 Future Enhancements
 
 ✅ Chat history database integration (MongoDB/PostgreSQL)<br>
-✅ User authentication and personalization
-- 🌐 Multilingual support
-- 📊 Analytics dashboard for user behavior
-- 📱 Mobile PWA version
+🌐 Multilingual support<br>
+✅ User authentication and personalization<br>
+📊 Analytics dashboard for user behavior<br>
+📱 Mobile PWA version<br>
 
 
