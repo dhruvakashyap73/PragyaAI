@@ -96,11 +96,20 @@ The following diagram illustrates the end-to-end architecture of the **Pragya Ch
 
 ---
 
-👨‍💻 Developed By
-Dhruva Kashyap
-BE Graduate from BNMIT | Artificial Intelligence & Machine Learning
-At REJAG Technologies Pvt. Ltd., Bengaluru.
+👨‍💻 Developed By<br>
+Dhruva Kashyap<br>
+BE Graduate from BNMIT | Artificial Intelligence & Machine Learning<br>
+At REJAG Technologies Pvt. Ltd., Bengaluru.<br>
 
 ___
+
+
+## 📘 Additional Resources
+
+For a complete explanation of the methodology, results, diagrams, and analysis,  
+📄 **[Click here to view the full project report](https://github.com/dhruvakashyap73/TrueeTone/blob/main/Project_Report.pdf)**
+
+
+---
 
 
