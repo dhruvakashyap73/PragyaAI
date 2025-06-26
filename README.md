@@ -38,7 +38,7 @@ A Smart Customer Support Chatbot for **REJAG Technologies** powered by **Flask**
 
 The following diagram illustrates the end-to-end architecture of the **Pragya Chatbot System** and how components interact:
 
-![System Architecture Diagram](https://github.com/dhruvakashyap73/Pragya-Chatbot/blob/main/SystemArchitecture.jpg)
+![System Architecture Diagram](https://github.com/dhruvakashyap73/Pragya-Chatbot/blob/main/Photos/SystemArchitecture.jpg)
 
 
 ---
