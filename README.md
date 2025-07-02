@@ -27,7 +27,7 @@ A Smart Customer Support Chatbot for **REJAG Technologies** powered by **Flask**
 |---------------|-------------------------------|
 | Frontend      | HTML, CSS, JavaScript         |
 | Backend       | Python, Flask                 |
-| LLM Engine    | Google Gemini API (via `genai`)   |
+| LLM Engine    | Google Gemini API             |
 | Deployment    | Localhost / Cloud-compatible  |
 | Logging       | Python logging module         |
 | API Security  | Environment Variables (.env)  |
