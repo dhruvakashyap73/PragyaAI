@@ -98,7 +98,7 @@ The following diagram illustrates the end-to-end architecture of the **Pragya Ch
 
 #### 👨‍💻 Developed By<br>
 Dhruva Kashyap<br>
-B.E. Graduate from BNMIT in Artificial Intelligence & Machine Learning<br>
+B.E. Graduate from BNMIT<br>
 
 ___
 
