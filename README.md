@@ -94,12 +94,4 @@ The following diagram illustrates the end-to-end architecture of the **Pragya Ch
 📊 Analytics dashboard for user behavior<br>
 📱 Mobile PWA version<br>
 
----
-
-#### 👨‍💻 Developed By<br>
-Dhruva Kashyap<br>
-B.E. Graduate from BNMIT<br>
-
-___
-
 
