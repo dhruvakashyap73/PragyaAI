@@ -1,15 +1,15 @@
-#  🤖 Pragya: Smart Help, Anytime 💬  
+#  🤖 Pragya: Smart Help, Anytime 
 A Smart Customer Support Chatbot for **REJAG Technologies** powered by **Flask** and **Gemini LLM**.
 
 ---
 
-### 🧠 Overview
+### Overview
 
 **Pragya** is an intelligent, real-time customer support chatbot designed to deliver **quick, concise, and context-aware responses** to user queries about REJAG Technologies. Built with a hybrid architecture, it combines **static FAQ handling** and **LLM-driven dynamic replies** to offer accurate and human-like interactions 24/7.
 
 ---
 
-### 🚀 Features
+### Features
 
 - **Natural Language Understanding** using Google’s **Gemini API**
 - Dynamic, chat-based UI with seamless UX
@@ -21,7 +21,7 @@ A Smart Customer Support Chatbot for **REJAG Technologies** powered by **Flask**
 
 ---
 
-### 🛠️ Tech Stack
+### Tech Stack
 
 | Component     | Technology Used               |
 |---------------|-------------------------------|
@@ -34,7 +34,7 @@ A Smart Customer Support Chatbot for **REJAG Technologies** powered by **Flask**
 
 ---
 
-### 🧱 System Architecture
+### System Architecture
 
 The following diagram illustrates the end-to-end architecture of the **Pragya Chatbot System** and how components interact:
 
@@ -43,7 +43,7 @@ The following diagram illustrates the end-to-end architecture of the **Pragya Ch
 
 ---
 
-### 🔄 Workflow Overview
+### Workflow Overview
 
 1. **User Interface (Browser):**
    - User types a query into the chatbot interface.
@@ -67,7 +67,7 @@ The following diagram illustrates the end-to-end architecture of the **Pragya Ch
 
 ---
 
-### 🧠 How It Works
+### How It Works
 
 1. The user interacts with a web-based chatbot interface.
 2. Input is sent asynchronously (AJAX) to the Flask server.
@@ -78,7 +78,7 @@ The following diagram illustrates the end-to-end architecture of the **Pragya Ch
 
 ---
 
-### 💡 Smart Response Handling
+### Smart Response Handling
 
 - Prompt Engineering ensures replies are short, relevant, and brand-aligned.
 - Session-based memory helps maintain context in multi-turn conversations.
@@ -86,12 +86,12 @@ The following diagram illustrates the end-to-end architecture of the **Pragya Ch
 
 ---
 
-### 🎯 Future Enhancements
+### Future Enhancements
 
-✅ Chat history database integration (MongoDB/PostgreSQL)<br>
-🌐 Multilingual support<br>
-✅ User authentication and personalization<br>
-📊 Analytics dashboard for user behavior<br>
-📱 Mobile PWA version<br>
+- Chat history database integration (MongoDB/PostgreSQL)<br>
+- Multilingual support<br>
+- User authentication and personalization<br>
+- Analytics dashboard for user behavior<br>
+- Mobile PWA version<br>
 
 
