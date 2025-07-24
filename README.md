@@ -74,7 +74,7 @@ The following diagram illustrates the end-to-end architecture of the **Pragya Ch
 - Keyword-driven suggestions personalize the interaction and guide users.
 
 
-## Screenshot
+## Screenshots
 
 ![Dashboard1](https://github.com/dhruvakashyap73/PragyaChatbot/blob/main/Photos/Photo1.png)
 
