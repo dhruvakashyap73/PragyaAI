@@ -1,13 +1,9 @@
 #  🤖 Pragya: Smart Help, Anytime 
 A Smart Customer Support Chatbot for **REJAG Technologies** powered by **Flask** and **Gemini LLM**.
 
----
-
 ### Overview
 
 **Pragya** is an intelligent, real-time customer support chatbot designed to deliver **quick, concise, and context-aware responses** to user queries about REJAG Technologies. Built with a hybrid architecture, it combines **static FAQ handling** and **LLM-driven dynamic replies** to offer accurate and human-like interactions 24/7.
-
----
 
 ### Features
 
@@ -18,8 +14,6 @@ A Smart Customer Support Chatbot for **REJAG Technologies** powered by **Flask**
 - Error handling and logging with complete traceability
 - Responsive, mobile-friendly chatbot widget
 - Modular Flask backend with easy-to-expand routes
-
----
 
 ### Tech Stack
 
@@ -32,7 +26,6 @@ A Smart Customer Support Chatbot for **REJAG Technologies** powered by **Flask**
 | Logging       | Python logging module         |
 | API Security  | Environment Variables (.env)  |
 
----
 
 ### System Architecture
 
@@ -40,8 +33,6 @@ The following diagram illustrates the end-to-end architecture of the **Pragya Ch
 
 ![System Architecture Diagram](https://github.com/dhruvakashyap73/Pragya-Chatbot/blob/main/Photos/SystemArchitecture.jpg)
 
-
----
 
 ### Workflow Overview
 
@@ -65,7 +56,6 @@ The following diagram illustrates the end-to-end architecture of the **Pragya Ch
    - The UI displays the assistant’s response.
    - Suggestion buttons help users continue the conversation easily.
 
----
 
 ### How It Works
 
@@ -76,7 +66,6 @@ The following diagram illustrates the end-to-end architecture of the **Pragya Ch
 5. The response is returned and displayed in the UI.
 6. Suggested follow-up queries are generated dynamically.
 
----
 
 ### Smart Response Handling
 
@@ -84,14 +73,9 @@ The following diagram illustrates the end-to-end architecture of the **Pragya Ch
 - Session-based memory helps maintain context in multi-turn conversations.
 - Keyword-driven suggestions personalize the interaction and guide users.
 
----
 
-### Future Enhancements
+## Screenshot
 
-- Chat history database integration (MongoDB/PostgreSQL)<br>
-- Multilingual support<br>
-- User authentication and personalization<br>
-- Analytics dashboard for user behavior<br>
-- Mobile PWA version<br>
+![Dashboard1](https://github.com/dhruvakashyap73/PragyaChatbot/blob/main/Photos/Photo2.png)
 
-
+![Dashboard1](https://github.com/dhruvakashyap73/PragyaChatbot/blob/main/Photos/Photo3.png)
