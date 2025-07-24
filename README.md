@@ -78,4 +78,4 @@ The following diagram illustrates the end-to-end architecture of the **Pragya Ch
 
 ![Dashboard1](https://github.com/dhruvakashyap73/PragyaChatbot/blob/main/Photos/Photo1.png)
 
-![Dashboard1](https://github.com/dhruvakashyap73/PragyaChatbot/blob/main/Photos/Photo3.png)
+![Dashboard2](https://github.com/dhruvakashyap73/PragyaChatbot/blob/main/Photos/Photo3.png)
