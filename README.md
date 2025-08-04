@@ -4,7 +4,8 @@
 
 <h3 align="center"><strong>PragyaAI: Smart Help, Anytime </strong></h3>
 
-A Smart Customer Support Chatbot for **REJAG Technologies** powered by **Flask** and **Gemini LLM**.
+align="center"><strong>A Smart Customer Support Chatbot for **REJAG Technologies** powered by **Flask** and **Gemini LLM**. </strong>
+
 
 ### Overview
 
