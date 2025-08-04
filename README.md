@@ -2,7 +2,7 @@
   <img src="https://github.com/dhruvakashyap73/PragyaAI/blob/main/Photos/Logo-Pragya.png" alt="Logo" width="250" height="250">
 </p>
 
-<h4 align="center"><strong>Smart Help, Anytime </strong></h4>
+<h3 align="center"><strong>Smart Help, Anytime </strong></h3>
 
 <h5 align="center"><strong>A Smart Customer Support Chatbot for REJAG Technologies powered by Flask and Gemini LLM. </strong></h5>
 
