@@ -1,4 +1,11 @@
-#  🤖 PragyaAI: Smart Help, Anytime 
+<p align="center">
+  <img src="https://github.com/dhruvakashyap73/PragyaAI/blob/main/Photos/Logo-PragyaAI.png" alt="Logo" width="120" height="120">
+</p>
+
+---
+
+<h1 align="center"><strong>PragyaAI: Smart Help, Anytime </strong></h1>
+
 A Smart Customer Support Chatbot for **REJAG Technologies** powered by **Flask** and **Gemini LLM**.
 
 ### Overview
