@@ -3,7 +3,7 @@ A Smart Customer Support Chatbot for **REJAG Technologies** powered by **Flask**
 
 ### Overview
 
-**Pragya** is an intelligent, real-time customer support chatbot designed to deliver **quick, concise, and context-aware responses** to user queries about REJAG Technologies. Built with a hybrid architecture, it combines **static FAQ handling** and **LLM-driven dynamic replies** to offer accurate and human-like interactions 24/7.
+**PragyaAI** is an intelligent, real-time customer support chatbot designed to deliver **quick, concise, and context-aware responses** to user queries about REJAG Technologies. Built with a hybrid architecture, it combines **static FAQ handling** and **LLM-driven dynamic replies** to offer accurate and human-like interactions 24/7.
 
 ### Features
 
