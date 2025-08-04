@@ -1,4 +1,4 @@
-#  🤖 Pragya: Smart Help, Anytime 
+#  🤖 PragyaAI: Smart Help, Anytime 
 A Smart Customer Support Chatbot for **REJAG Technologies** powered by **Flask** and **Gemini LLM**.
 
 ### Overview
