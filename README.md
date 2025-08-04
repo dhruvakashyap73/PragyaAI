@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://github.com/dhruvakashyap73/PragyaAI/blob/main/Photos/Logo-Pragya.png" alt="Logo" width="220" height="220">
+  <img src="https://github.com/dhruvakashyap73/PragyaAI/blob/main/Photos/Logo-Pragya.png" alt="Logo" width="250" height="250">
 </p>
 
-<h3 align="center"><strong>PragyaAI: Smart Help, Anytime </strong></h3>
+<h4 align="center"><strong>Smart Help, Anytime </strong></h4>
 
 <h5 align="center"><strong>A Smart Customer Support Chatbot for REJAG Technologies powered by Flask and Gemini LLM. </strong></h5>
 
